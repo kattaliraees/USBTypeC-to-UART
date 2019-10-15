@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USBTypeC-to-UART-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,4 +14,210 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U1
+U 1 1 5DA575FD
+P 6850 3400
+F 0 "U1" H 7350 4350 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 7350 4250 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7300 2600 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 6900 2350 50  0001 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5DA582B4
+P 3050 3350
+F 0 "J1" H 3157 4307 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3157 4216 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3157 4125 50  0000 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3200 3350 50  0001 C CNN
+	1    3050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 3850 3450
+Wire Wire Line
+	3650 3550 3850 3550
+Wire Wire Line
+	3850 3550 3850 3450
+Wire Wire Line
+	3650 3350 3850 3350
+Wire Wire Line
+	3650 3250 3850 3250
+Wire Wire Line
+	3850 3250 3850 3350
+$Comp
+L power:VDD #PWR04
+U 1 1 5DA5C525
+P 6750 2300
+F 0 "#PWR04" H 6750 2150 50  0001 C CNN
+F 1 "VDD" H 6767 2473 50  0000 C CNN
+F 2 "" H 6750 2300 50  0001 C CNN
+F 3 "" H 6750 2300 50  0001 C CNN
+	1    6750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2500 6750 2300
+$Comp
+L power:GND #PWR05
+U 1 1 5DA5E283
+P 6950 4450
+F 0 "#PWR05" H 6950 4200 50  0001 C CNN
+F 1 "GND" H 6955 4277 50  0000 C CNN
+F 2 "" H 6950 4450 50  0001 C CNN
+F 3 "" H 6950 4450 50  0001 C CNN
+	1    6950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4300 6950 4400
+Wire Wire Line
+	6850 4300 6850 4400
+Wire Wire Line
+	6850 4400 6950 4400
+Connection ~ 6950 4400
+Wire Wire Line
+	6950 4400 6950 4450
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 5DA5F13D
+P 8150 3100
+F 0 "J2" H 8122 2982 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 8122 3073 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8150 3100 50  0001 C CNN
+F 3 "~" H 8150 3100 50  0001 C CNN
+	1    8150 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 2900 7950 2900
+Wire Wire Line
+	7450 3000 7950 3000
+Wire Wire Line
+	7450 3100 7950 3100
+Wire Wire Line
+	7450 3200 7950 3200
+$Comp
+L power:VDD #PWR06
+U 1 1 5DA6662B
+P 7950 2700
+F 0 "#PWR06" H 7950 2550 50  0001 C CNN
+F 1 "VDD" H 7967 2873 50  0000 C CNN
+F 2 "" H 7950 2700 50  0001 C CNN
+F 3 "" H 7950 2700 50  0001 C CNN
+	1    7950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2700 7950 2800
+$Comp
+L power:GND #PWR07
+U 1 1 5DA671A3
+P 7950 3400
+F 0 "#PWR07" H 7950 3150 50  0001 C CNN
+F 1 "GND" H 7955 3227 50  0000 C CNN
+F 2 "" H 7950 3400 50  0001 C CNN
+F 3 "" H 7950 3400 50  0001 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3400 7950 3300
+$Comp
+L power:GND #PWR02
+U 1 1 5DA67D8D
+P 3050 4350
+F 0 "#PWR02" H 3050 4100 50  0001 C CNN
+F 1 "GND" H 3055 4177 50  0000 C CNN
+F 2 "" H 3050 4350 50  0001 C CNN
+F 3 "" H 3050 4350 50  0001 C CNN
+	1    3050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4350 3050 4250
+$Comp
+L power:GND #PWR01
+U 1 1 5DA68759
+P 2750 4350
+F 0 "#PWR01" H 2750 4100 50  0001 C CNN
+F 1 "GND" H 2755 4177 50  0000 C CNN
+F 2 "" H 2750 4350 50  0001 C CNN
+F 3 "" H 2750 4350 50  0001 C CNN
+	1    2750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4350 2750 4250
+Text Label 6250 3800 2    50   ~ 0
+D+
+Text Label 6250 3900 2    50   ~ 0
+D-
+Text Label 3850 3300 0    50   ~ 0
+D-
+Text Label 3850 3500 0    50   ~ 0
+D+
+Text Label 3650 2750 0    50   ~ 0
+VBUS
+Text Label 6250 3400 2    50   ~ 0
+VBUS
+$Comp
+L Device:R 22K1
+U 1 1 5DA74737
+P 5500 3450
+F 0 "22K1" H 5570 3496 50  0000 L CNN
+F 1 "R" H 5570 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 3450 50  0001 C CNN
+F 3 "~" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 47K1
+U 1 1 5DA74D9A
+P 5500 3950
+F 0 "47K1" H 5570 3996 50  0000 L CNN
+F 1 "R" H 5570 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 3950 50  0001 C CNN
+F 3 "~" H 5500 3950 50  0001 C CNN
+	1    5500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3600 5500 3700
+Wire Wire Line
+	6250 3700 5500 3700
+Connection ~ 5500 3700
+Wire Wire Line
+	5500 3700 5500 3800
+Text Label 5500 3300 2    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR03
+U 1 1 5DA77E96
+P 5500 4200
+F 0 "#PWR03" H 5500 3950 50  0001 C CNN
+F 1 "GND" H 5505 4027 50  0000 C CNN
+F 2 "" H 5500 4200 50  0001 C CNN
+F 3 "" H 5500 4200 50  0001 C CNN
+	1    5500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4100 5500 4200
+NoConn ~ 7450 3700
+NoConn ~ 7450 3800
+NoConn ~ 7450 3900
+NoConn ~ 7450 4000
+NoConn ~ 6250 3100
+NoConn ~ 6250 3200
+NoConn ~ 6250 2800
+NoConn ~ 6850 2500
+NoConn ~ 3650 2950
+NoConn ~ 3650 3050
+NoConn ~ 3650 3850
+NoConn ~ 3650 3950
 $EndSCHEMATC
