@@ -305,10 +305,6 @@ F 12 "Active" H 3500 6275 60  0001 L CNN "Status"
 	1    3300 5075
 	1    0    0    -1  
 $EndComp
-Text Label 3300 4875 1    50   ~ 0
-D-
-Text Label 3200 4875 1    50   ~ 0
-D+
 $Comp
 L power:GND #PWR08
 U 1 1 5DA8721E
@@ -481,4 +477,8 @@ Wire Wire Line
 	3400 3625 3575 3625
 Text Label 3400 4875 1    50   ~ 0
 VBUS
+Text Label 3300 4875 1    50   ~ 0
+D+
+Text Label 3200 4875 1    50   ~ 0
+D-
 $EndSCHEMATC
